@@ -19,7 +19,7 @@ def index(request):
 
 
 def sobre(request):
-    pessoa = Pessoa.objects.all()
+    pessoa = Pessoa.objects.filter()
     contexto = {
         'pessoas':pessoa
     }
